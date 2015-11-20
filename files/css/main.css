@@ -1,0 +1,2485 @@
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8+, and Opera
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+#unSupported .modal-content, #fileSizeError .modal-content, #fileTypeError .modal-content, #mobileWebApp .modal-content, #landscapeMobile .modal-content, .wrapper #frankenLoader .loading-container .loading-content, #facebookErrorModal .modal-content, .wrapper #transitionVid #transitionVid-01, .mobile #shareFrankenFriend #mobileShareOverlay .modal-content {
+  position: relative;
+  top: 45%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+html {
+  width: 100%;
+  height: 100%; }
+
+body {
+  background: #120705;
+  font-family: "franklin-gothic-ext-comp-urw", sans-serif;
+  letter-spacing: 0.0625em;
+  font-weight: 600;
+  height: 100%;
+  width: 100%; }
+
+.btn {
+  cursor: pointer; }
+
+.ignore-pointer {
+  pointer-events: none; }
+
+.frank_btn {
+  height: 56px;
+  text-align: center;
+  cursor: pointer;
+  backface-visibility: hidden;
+  font-size: 24px;
+  position: relative;
+  z-index: 1;
+  display: inline-block; }
+  .frank_btn .btn-left {
+    background-image: url("../images/frank_ui_button_left.png");
+    background-repeat: no-repeat;
+    width: 29px;
+    height: 56px;
+    display: inline-block;
+    vertical-align: top; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+      .frank_btn .btn-left {
+        background-image: url("../images/frank_ui_button_left@2x.png");
+        -webkit-background-size: 29px 56px;
+        -moz-background-size: 29px 56px;
+        -o-background-size: 29px 56px;
+        background-size: 29px 56px; } }
+  .frank_btn .btn-mid {
+    background-image: url("../images/frank_ui_button_middle.png");
+    background-repeat: no-repeat;
+    background-repeat: repeat-x;
+    height: 56px;
+    width: auto;
+    min-width: 100px;
+    padding: 0 10px;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 57px;
+    position: relative;
+    color: #342e2f; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+      .frank_btn .btn-mid {
+        background-image: url("../images/frank_ui_button_middle@2x.png");
+        -webkit-background-size: 2px 56px;
+        -moz-background-size: 2px 56px;
+        -o-background-size: 2px 56px;
+        background-size: 2px 56px; } }
+  .frank_btn .btn-right {
+    background-image: url("../images/frank_ui_button_right.png");
+    background-repeat: no-repeat;
+    width: 29px;
+    height: 56px;
+    display: inline-block;
+    vertical-align: top; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+      .frank_btn .btn-right {
+        background-image: url("../images/frank_ui_button_right@2x.png");
+        -webkit-background-size: 29px 56px;
+        -moz-background-size: 29px 56px;
+        -o-background-size: 29px 56px;
+        background-size: 29px 56px; } }
+
+.ie8 #unSupported, .ie9 #unSupported {
+  display: block; }
+
+#unSupported, #fileSizeError, #fileTypeError, #mobileWebApp {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 10; }
+  #unSupported .modal-bg, #fileSizeError .modal-bg, #fileTypeError .modal-bg, #mobileWebApp .modal-bg {
+    background: url("../images/notSupported_bg_desktop.jpg") top center no-repeat;
+    @inlcude vendor-prefix(opacity, 0.9);
+    background-size: 200%;
+    background-color: #000;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%; }
+  #unSupported .modal-close, #fileSizeError .modal-close, #fileTypeError .modal-close, #mobileWebApp .modal-close {
+    position: absolute;
+    top: -25px;
+    right: 0px;
+    color: #fff; }
+    #unSupported .modal-close .close-x, #fileSizeError .modal-close .close-x, #fileTypeError .modal-close .close-x, #mobileWebApp .modal-close .close-x {
+      border: 1px solid #fff;
+      padding: 3px;
+      display: inline-block;
+      line-height: 9px; }
+  #unSupported .modal-content, #fileSizeError .modal-content, #fileTypeError .modal-content, #mobileWebApp .modal-content {
+    position: relative;
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+    padding: 25px;
+    text-align: center;
+    font-size: 28px;
+    color: #fff;
+    text-transform: uppercase;
+    box-size: border-box; }
+
+#unSupported, #mobileWebApp {
+  z-index: 25; }
+  #unSupported .modal-bg, #mobileWebApp .modal-bg {
+    @inlcude vendor-prefix(opacity, 1); }
+  #unSupported .tt, #mobileWebApp .tt {
+    width: 75%;
+    max-width: 366px;
+    margin: 0 auto 50%; }
+  #unSupported a, #mobileWebApp a {
+    color: #fff;
+    text-decoration: underline; }
+
+#mobileWebApp {
+  height: 100%; }
+  #mobileWebApp .modal-content {
+    top: 0px;
+    font-size: 20px;
+    line-height: 18px;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0); }
+    #mobileWebApp .modal-content .break-line {
+      width: 100%;
+      margin-bottom: 10px; }
+    #mobileWebApp .modal-content .not-supported {
+      font-size: 34px;
+      line-height: 30px;
+      margin-bottom: 10px; }
+
+#copyMobileUrl {
+  margin-top: 10px;
+  color: #0076c0;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase; }
+
+#landscapeMobile {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  color: #ffffff;
+  font-size: 18px; }
+  #landscapeMobile .modal-bg {
+    background: url("../images/mobile/frank_rotate_bg.png") 0 0 no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 1; }
+  #landscapeMobile .modal-content {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 25px;
+    text-align: center;
+    font-size: 28px;
+    box-size: border-box; }
+
+body.overlay {
+  overflow: hidden;
+  position: fixed; }
+
+body.pc {
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none; }
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  min-width: 1000px;
+  min-height: 670px;
+  overflow: hidden;
+  position: relative; }
+  .wrapper a {
+    color: #000;
+    outline: 0; }
+  .wrapper .section {
+    text-align: center;
+    min-height: 700px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%; }
+    .wrapper .section .section-content {
+      width: 1222px;
+      max-height: 1000px;
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      margin-left: -611px; }
+      @media only screen and (max-height: 950px) {
+        .wrapper .section .section-content {
+          top: 160px; } }
+  .wrapper .page {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    max-width: 2000px;
+    min-height: 670px;
+    display: none;
+    margin: 0 auto;
+    overflow: hidden;
+    top: -60px;
+    clear: both; }
+  .wrapper .franken-particles {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 1222px;
+    height: 1320px;
+    z-index: 4;
+    margin-left: -611px; }
+    @media only screen and (max-height: 950px) {
+      .wrapper .franken-particles {
+        top: -390px; } }
+  .wrapper .franken-grunge {
+    background: url("../images/frank_grunge.png") 0 0 no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 2; }
+  .wrapper .blackout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #120705;
+    z-index: 5; }
+  .wrapper #frankenLoader {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: none;
+    color: #fff;
+    z-index: 4; }
+    .wrapper #frankenLoader .loading-bg {
+      background: #120705;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%; }
+    .wrapper #frankenLoader.sub-loading .loading-bg {
+      opacity: 0.5;
+      -webkit-opacity: 0.5;
+      -ms-opacity: 0.5;
+      -moz-opacity: 0.5;
+      -o-opacity: 0.5; }
+    .wrapper #frankenLoader.sub-loading .loading-percentage {
+      display: none; }
+    .wrapper #frankenLoader .loading-container {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0px;
+      left: 0px; }
+      .wrapper #frankenLoader .loading-container .loading-content {
+        width: 700px;
+        height: 500px;
+        margin: 0 auto;
+        color: #000;
+        text-align: center; }
+        .wrapper #frankenLoader .loading-container .loading-content .loading-title {
+          background-image: url("../images/frank_TT_lg.png");
+          background-repeat: no-repeat;
+          width: 421px;
+          height: 113px;
+          margin: 0 auto; }
+          @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+            .wrapper #frankenLoader .loading-container .loading-content .loading-title {
+              background-image: url("../images/frank_TT_lg@2x.png");
+              -webkit-background-size: 421px 113px;
+              -moz-background-size: 421px 113px;
+              -o-background-size: 421px 113px;
+              background-size: 421px 113px; } }
+      .wrapper #frankenLoader .loading-container #loading_lightning {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        margin: auto;
+        width: 200px;
+        height: 200px;
+        overflow: hidden; }
+        .wrapper #frankenLoader .loading-container #loading_lightning img {
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          width: 1000px;
+          height: 1000px;
+          max-width: 1000px; }
+        .wrapper #frankenLoader .loading-container #loading_lightning .loading-percentage {
+          position: absolute;
+          top: 44%;
+          width: 100%;
+          text-align: center;
+          font-size: 28px; }
+  .wrapper #frankenHeader {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    max-width: 1222px;
+    margin: 0px auto -50px;
+    z-index: 3;
+    color: #bac9cc;
+    display: none;
+    z-index: 20; }
+    @media only screen and (min-width: 1875px) {
+      .wrapper #frankenHeader #audio {
+        margin-right: -250px; } }
+    @media only screen and (max-width: 1875px) and (min-width: 1600px) {
+      .wrapper #frankenHeader #audio {
+        margin-right: -75px; } }
+    .wrapper #frankenHeader .frankenHeader_title-mobile {
+      display: none; }
+    .wrapper #frankenHeader .frankenHeader_title {
+      width: 500px;
+      height: 49px;
+      margin-left: 20px;
+      margin-top: 10px;
+      font-size: 48px;
+      float: left;
+      font-family: "futura-pt";
+      letter-spacing: 0px;
+      font-weight: 800; }
+      .wrapper #frankenHeader .frankenHeader_title img {
+        width: 80%; }
+      @media only screen and (min-width: 1875px) {
+        .wrapper #frankenHeader .frankenHeader_title {
+          margin-left: -250px; } }
+      @media only screen and (max-width: 1875px) and (min-width: 1600px) {
+        .wrapper #frankenHeader .frankenHeader_title {
+          margin-left: -75px; } }
+    .wrapper #frankenHeader .frankenHeader_sound {
+      float: right;
+      margin-top: 20px;
+      margin-right: 20px; }
+      .wrapper #frankenHeader .frankenHeader_sound > div {
+        background-image: url("../images/frank_ui_sound.png");
+        background-repeat: no-repeat;
+        width: 28px;
+        height: 25px;
+        display: none; }
+        @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+          .wrapper #frankenHeader .frankenHeader_sound > div {
+            background-image: url("../images/frank_ui_sound@2x.png");
+            -webkit-background-size: 54px 25px;
+            -moz-background-size: 54px 25px;
+            -o-background-size: 54px 25px;
+            background-size: 54px 25px; } }
+      .wrapper #frankenHeader .frankenHeader_sound .mute {
+        background-position: -26px 0px; }
+        .wrapper #frankenHeader .frankenHeader_sound .mute:hover {
+          background-position: 0px 0px; }
+      .wrapper #frankenHeader .frankenHeader_sound .unmute {
+        background-position: 0px 0px; }
+        .wrapper #frankenHeader .frankenHeader_sound .unmute:hover {
+          background-position: -26px 0px; }
+    .wrapper #frankenHeader .frankenHeader_hashtag {
+      float: right;
+      color: #0076c0;
+      margin-top: 17px;
+      margin-right: 20px;
+      font-size: 22px; }
+      @media only screen and (min-width: 1875px) {
+        .wrapper #frankenHeader .frankenHeader_hashtag {
+          margin-right: -210px; } }
+      @media only screen and (max-width: 1875px) and (min-width: 1600px) {
+        .wrapper #frankenHeader .frankenHeader_hashtag {
+          margin-right: -35px; } }
+  .wrapper #frankenFooter {
+    height: 120px;
+    position: relative;
+    max-width: 1222px;
+    margin: -190px auto 0;
+    z-index: 20;
+    float: left;
+    display: none; }
+    @media only screen and (max-height: 950px) {
+      .wrapper #frankenFooter {
+        margin: -130px auto 0; } }
+    .wrapper #frankenFooter a {
+      outline: 0; }
+    .wrapper #frankenFooter .frankenFooter_title {
+      background: url("../images/frank_TT_sm@2x.png") 0 0 no-repeat;
+      background-size: cover;
+      width: 293px;
+      height: 78px;
+      float: left;
+      margin-left: 15px;
+      margin-top: -25px; }
+      @media only screen and (min-width: 1875px) {
+        .wrapper #frankenFooter .frankenFooter_title {
+          margin-left: -250px; } }
+      @media only screen and (max-width: 1875px) and (min-width: 1600px) {
+        .wrapper #frankenFooter .frankenFooter_title {
+          margin-left: -75px; } }
+    .wrapper #frankenFooter .frankenFooter_hashtag {
+      float: right;
+      color: #0076c0;
+      margin-top: 10px;
+      margin-right: 20px;
+      font-size: 22px; }
+  .wrapper #frankenFooterRight {
+    height: 120px;
+    position: relative;
+    max-width: 1222px;
+    margin: -190px auto 0;
+    z-index: 20;
+    float: right;
+    display: none; }
+    @media only screen and (max-height: 950px) {
+      .wrapper #frankenFooterRight {
+        margin: -130px auto 0; } }
+    .wrapper #frankenFooterRight .frankenFooter_watch-trailer {
+      float: right;
+      padding: 5px 15px;
+      font-size: 22px;
+      border: 1px solid #C0C0C0;
+      color: #C0C0C0;
+      margin: 0 20px 0 0; }
+      .wrapper #frankenFooterRight .frankenFooter_watch-trailer a {
+        color: #C0C0C0;
+        text-decoration: none; }
+      .wrapper #frankenFooterRight .frankenFooter_watch-trailer:hover {
+        border: 1px solid #FFFFFF; }
+        .wrapper #frankenFooterRight .frankenFooter_watch-trailer:hover a {
+          color: #FFFFFF; }
+      @media only screen and (min-width: 1875px) {
+        .wrapper #frankenFooterRight .frankenFooter_watch-trailer {
+          margin-right: -250px; } }
+      @media only screen and (max-width: 1875px) and (min-width: 1600px) {
+        .wrapper #frankenFooterRight .frankenFooter_watch-trailer {
+          margin-right: -75px; } }
+
+#legalFooter {
+  position: relative;
+  width: 100%;
+  min-width: 1000px;
+  background: #131217;
+  color: #787878; }
+  #legalFooter a {
+    color: #787878;
+    outline: 0; }
+  #legalFooter .legal {
+    padding: 20px 5%;
+    position: relative;
+    display: block;
+    min-height: 80px;
+    max-width: 1700px;
+    margin: 0 auto;
+    text-align: center; }
+    #legalFooter .legal .social-links {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px; }
+    #legalFooter .legal .footer-fb {
+      display: inline-block;
+      background: url("../images/footer_fb.png") 0 0 no-repeat;
+      background-size: 56px;
+      width: 27px;
+      height: 27px;
+      margin-right: 10px;
+      padding-top: 1px; }
+      #legalFooter .legal .footer-fb:hover {
+        background-position: -27px 0; }
+    #legalFooter .legal .footer-tw {
+      display: inline-block;
+      background: url("../images/footer_tw.png") 0 0 no-repeat;
+      background-size: 56px;
+      width: 27px;
+      height: 27px; }
+      #legalFooter .legal .footer-tw:hover {
+        background-position: -27px 0; }
+    #legalFooter .legal .legal_graphics {
+      float: left;
+      width: 160px; }
+    #legalFooter .legal .mid {
+      display: inline-block;
+      text-transform: uppercase;
+      line-height: 1.1 !important;
+      margin: 0 !important;
+      text-align: center;
+      width: 50%; }
+    #legalFooter .legal .rating {
+      float: right;
+      color: #787878;
+      font-size: 10px;
+      margin-right: 6px; }
+    #legalFooter .legal .ratingWrap {
+      float: right;
+      width: 160px; }
+      #legalFooter .legal .ratingWrap .rating_info {
+        float: right;
+        color: #787878;
+        font-size: 10px;
+        margin-right: 20px; }
+
+#frankenIntro {
+  display: none; }
+  #frankenIntro .franken-intro-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; }
+    #frankenIntro .franken-intro-bg .franken-intro-bg-img {
+      width: 100%;
+      height: 100%;
+      background: url("../images/frank_bg_library.jpg") 0 0 no-repeat;
+      background-size: cover; }
+  #frankenIntro .franken-preview-copy {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    color: #FFF;
+    font-size: 40px;
+    z-index: 4; }
+    @media only screen and (max-height: 950px) {
+      #frankenIntro .franken-preview-copy {
+        top: 160px; } }
+    #frankenIntro .franken-preview-copy .franken-preview-copy-line {
+      position: absolute;
+      bottom: 0;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%); }
+  #frankenIntro .franken-preview-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 50%; }
+    #frankenIntro .franken-preview-container .franken-preview {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      display: none;
+      width: 80%; }
+      #frankenIntro .franken-preview-container .franken-preview.small {
+        max-width: 1300px !important;
+        width: 100% !important;
+        height: auto !important;
+        min-width: 1300px !important;
+        bottom: 0px; }
+
+.landscape #frankenIntro .franken-preview-container .franken-preview {
+  width: auto;
+  height: 80%; }
+
+@media only screen and (max-height: 980px) {
+  .portrait #selectFrankenFriends {
+    background-size: auto 100%; } }
+
+@media only screen and (max-height: 980px) {
+  .landscape #selectFrankenFriends {
+    background-size: 1222px auto; } }
+
+#selectFrankenFriends {
+  background: url("../images/frank_bg_study.jpg") center top no-repeat;
+  background-size: auto 100%; }
+  #selectFrankenFriends .blackout {
+    z-index: initial;
+    opacity: 0; }
+  #selectFrankenFriends .franken-hardware {
+    position: absolute;
+    height: 820px; }
+    @media only screen and (max-height: 950px) {
+      #selectFrankenFriends .franken-hardware {
+        top: 120px; } }
+  #selectFrankenFriends .franken-shelf {
+    background: url("../images/frank_bg_table.png") 0 0 no-repeat;
+    width: 1222px;
+    width: 2247px;
+    height: 768px;
+    position: absolute;
+    bottom: -330px;
+    left: 50%;
+    margin-left: -1124px; }
+  #selectFrankenFriends .franken-shelf-black {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 2247px;
+    height: 80px;
+    margin-left: -1123px;
+    background: #000000; }
+  #selectFrankenFriends .franken-jars {
+    background-image: url("../images/frank_jars.png");
+    background-repeat: no-repeat;
+    width: 1081px;
+    height: 594px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -569px; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+      #selectFrankenFriends .franken-jars {
+        background-image: url("../images/frank_jars@2x.png");
+        -webkit-background-size: 1207px 594px;
+        -moz-background-size: 1207px 594px;
+        -o-background-size: 1207px 594px;
+        background-size: 1207px 594px; } }
+  #selectFrankenFriends .jar-highlights {
+    top: 0px;
+    position: absolute;
+    width: 1222px;
+    max-height: 1000px;
+    left: 50%;
+    margin-left: -611px; }
+    #selectFrankenFriends .jar-highlights .jar-highlight {
+      background: url("../images/frank_jar_light.png") 0 0 no-repeat;
+      background-size: 100% 100%;
+      width: 567px;
+      height: 768px;
+      position: absolute;
+      top: -120px;
+      display: none; }
+      #selectFrankenFriends .jar-highlights .jar-highlight.jar-highlight_left {
+        left: 50px; }
+      #selectFrankenFriends .jar-highlights .jar-highlight.jar-highlight_middle {
+        left: 320px; }
+      #selectFrankenFriends .jar-highlights .jar-highlight.jar-highlight_right {
+        left: 570px; }
+    @media only screen and (min-height: 1100px) {
+      #selectFrankenFriends .jar-highlights .jar-highlight {
+        height: 845px; } }
+    @media only screen and (min-height: 1200px) {
+      #selectFrankenFriends .jar-highlights .jar-highlight {
+        height: 921px; } }
+  #selectFrankenFriends .jar-shadows {
+    top: 0px;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%; }
+    #selectFrankenFriends .jar-shadows .jar-shadow {
+      position: absolute;
+      display: none; }
+      #selectFrankenFriends .jar-shadows .jar-shadow.jar-shadow_right {
+        background: url("../images/frank_jars_shadow_right.png") 0 0 no-repeat;
+        height: 659px;
+        width: 2000px;
+        position: absolute;
+        bottom: -67px;
+        right: -441px; }
+      #selectFrankenFriends .jar-shadows .jar-shadow.jar-shadow_middle {
+        background: url("../images/frank_jars_shadow_middle.png") 0 0 no-repeat;
+        height: 659px;
+        width: 2000px;
+        position: absolute;
+        bottom: -67px;
+        right: -441px; }
+      #selectFrankenFriends .jar-shadows .jar-shadow.jar-shadow_left {
+        background: url("../images/frank_jars_shadow_left.png") 0 0 no-repeat;
+        height: 659px;
+        width: 2000px;
+        position: absolute;
+        bottom: -67px;
+        right: -441px; }
+  #selectFrankenFriends .jar-containers {
+    height: 565px;
+    z-index: 6;
+    bottom: 210px; }
+    #selectFrankenFriends .jar-containers .jar-description {
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      top: -95px;
+      color: #fff;
+      font-size: 28px;
+      text-shadow: 0px 0px 4px #000; }
+      #selectFrankenFriends .jar-containers .jar-description .photo, #selectFrankenFriends .jar-containers .jar-description .add {
+        display: none; }
+      #selectFrankenFriends .jar-containers .jar-description .add {
+        display: block; }
+      #selectFrankenFriends .jar-containers .jar-description .add {
+        margin: 20px 0 0 0; }
+    #selectFrankenFriends .jar-containers.has-images .add {
+      display: none; }
+    #selectFrankenFriends .jar-containers.has-images .photo {
+      display: block; }
+    @media only screen and (max-height: 950px) {
+      #selectFrankenFriends .jar-containers {
+        top: 170px; } }
+  #selectFrankenFriends .jar-container {
+    display: inline-block;
+    margin: 0 16px;
+    width: 225px;
+    vertical-align: top;
+    position: relative; }
+    #selectFrankenFriends .jar-container.has-image {
+      margin: 0 16px; }
+    #selectFrankenFriends .jar-container.active .edit-photo .edit-photo_controls {
+      opacity: 1;
+      -webkit-opacity: 1;
+      -ms-opacity: 1;
+      -moz-opacity: 1;
+      -o-opacity: 1; }
+    #selectFrankenFriends .jar-container .add-photo {
+      margin-top: 250px;
+      overflow: hidden;
+      padding-bottom: 20px; }
+      #selectFrankenFriends .jar-container .add-photo:hover .add-photo_options, #selectFrankenFriends .jar-container .add-photo.hover .add-photo_options {
+        margin: -12px auto;
+        padding: 10px 0px 5px 0px;
+        height: 65px;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -o-transition: all 0.5s; }
+      #selectFrankenFriends .jar-container .add-photo .add-photo_options {
+        width: 114px;
+        background: #fff;
+        font-size: 20px;
+        box-shadow: 0px 0px 5px #000;
+        -webkit-box-shadow: 0px 0px 5px #000;
+        -ms-box-shadow: 0px 0px 5px #000;
+        -moz-box-shadow: 0px 0px 5px #000;
+        -o-box-shadow: 0px 0px 5px #000;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        height: 0px;
+        margin: -40px auto 0px;
+        padding: 10px 0px 10px 0px;
+        overflow: hidden;
+        color: #454243; }
+        #selectFrankenFriends .jar-container .add-photo .add-photo_options > div:hover {
+          color: #0076c0; }
+        #selectFrankenFriends .jar-container .add-photo .add-photo_options > div {
+          transition: color 0.5s;
+          -webkit-transition: color 0.5s;
+          -ms-transition: color 0.5s;
+          -moz-transition: color 0.5s;
+          -o-transition: color 0.5s; }
+        #selectFrankenFriends .jar-container .add-photo .add-photo_options .add-photo_upload {
+          margin: 5px 0px;
+          position: relative; }
+          #selectFrankenFriends .jar-container .add-photo .add-photo_options .add-photo_upload input {
+            opacity: 0;
+            -webkit-opacity: 0;
+            -ms-opacity: 0;
+            -moz-opacity: 0;
+            -o-opacity: 0;
+            position: absolute;
+            top: 0px;
+            width: auto;
+            cursor: pointer;
+            font-size: 10000px;
+            height: 100%;
+            right: 0;
+            top: 0;
+            width: 100%; }
+    #selectFrankenFriends .jar-container .edit-photo {
+      display: none; }
+      #selectFrankenFriends .jar-container .edit-photo .edit-photo_add-another {
+        position: relative;
+        width: 25px;
+        float: right;
+        margin-top: 3px; }
+        #selectFrankenFriends .jar-container .edit-photo .edit-photo_add-another img {
+          width: 100%; }
+      #selectFrankenFriends .jar-container .edit-photo .edit-photo_controls {
+        margin: -55px 0 90px;
+        opacity: 0;
+        -webkit-opacity: 0;
+        -ms-opacity: 0;
+        -moz-opacity: 0;
+        -o-opacity: 0; }
+        #selectFrankenFriends .jar-container .edit-photo .edit-photo_controls .edit-ui {
+          position: relative;
+          height: 50px;
+          width: 205px;
+          margin: 0 auto; }
+          #selectFrankenFriends .jar-container .edit-photo .edit-photo_controls .edit-ui .modifier {
+            width: 53px;
+            height: 49px;
+            background-image: url("../images/frank_ui_jars.png");
+            background-repeat: no-repeat;
+            float: left; }
+            @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+              #selectFrankenFriends .jar-container .edit-photo .edit-photo_controls .edit-ui .modifier {
+                background-image: url("../images/frank_ui_jars@2x.png");
+                -webkit-background-size: 51px 385px;
+                -moz-background-size: 51px 385px;
+                -o-background-size: 51px 385px;
+                background-size: 51px 385px; } }
+            #selectFrankenFriends .jar-container .edit-photo .edit-photo_controls .edit-ui .modifier.image-scale {
+              background-position: 0px -196px; }
+              #selectFrankenFriends .jar-container .edit-photo .edit-photo_controls .edit-ui .modifier.image-scale.active {
+                background-position: -1px -245px; }
+            #selectFrankenFriends .jar-container .edit-photo .edit-photo_controls .edit-ui .modifier.image-bright {
+              background-position: 0px 0px; }
+              #selectFrankenFriends .jar-container .edit-photo .edit-photo_controls .edit-ui .modifier.image-bright.active {
+                background-position: 0px -50px; }
+            #selectFrankenFriends .jar-container .edit-photo .edit-photo_controls .edit-ui .modifier.image-rotate {
+              background-position: 0px -98px; }
+              #selectFrankenFriends .jar-container .edit-photo .edit-photo_controls .edit-ui .modifier.image-rotate.active {
+                background-position: 0px -147px; }
+            #selectFrankenFriends .jar-container .edit-photo .edit-photo_controls .edit-ui .modifier.edit-photo_add-another {
+              background-position: 0px -295px;
+              height: 40px;
+              width: 44px; }
+        #selectFrankenFriends .jar-container .edit-photo .edit-photo_controls .image-control {
+          position: relative;
+          width: 215px;
+          height: 28px;
+          margin: 10px 0 0px 0px; }
+          #selectFrankenFriends .jar-container .edit-photo .edit-photo_controls .image-control .image-control-background {
+            position: absolute;
+            top: 9px;
+            left: -5px;
+            width: 230px;
+            height: 12px;
+            background: #0c5582;
+            opacity: 0.7;
+            -webkit-opacity: 0.7;
+            -ms-opacity: 0.7;
+            -moz-opacity: 0.7;
+            -o-opacity: 0.7; }
+          #selectFrankenFriends .jar-container .edit-photo .edit-photo_controls .image-control .image-control-range {
+            position: absolute;
+            top: 14px;
+            left: 0px;
+            width: 20%;
+            height: 2px;
+            padding-right: 5px;
+            background: #1f82c7; }
+          #selectFrankenFriends .jar-container .edit-photo .edit-photo_controls .image-control .image-control-slider {
+            position: relative;
+            width: 95%;
+            height: 100%;
+            background: none;
+            border: none; }
+          #selectFrankenFriends .jar-container .edit-photo .edit-photo_controls .image-control .ui-slider-handle {
+            width: 15px;
+            height: 15px;
+            background: #fff;
+            border-radius: 25px;
+            -webkit-border-radius: 25px;
+            -ms-border-radius: 25px;
+            -moz-border-radius: 25px;
+            -o-border-radius: 25px;
+            box-shadow: 0px 0px 10px #000;
+            -webkit-box-shadow: 0px 0px 10px #000;
+            -ms-box-shadow: 0px 0px 10px #000;
+            -moz-box-shadow: 0px 0px 10px #000;
+            -o-box-shadow: 0px 0px 10px #000;
+            border: none;
+            margin: 18px 0 0 0;
+            cursor: pointer;
+            position: absolute;
+            top: -10px; }
+      #selectFrankenFriends .jar-container .edit-photo .edit-photo_canvas {
+        width: 225px;
+        height: 260px;
+        position: relative;
+        overflow: hidden;
+        background-image: url("../images/frank_edit_headremplate.png");
+        background-repeat: no-repeat;
+        background-position: center top; }
+        @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+          #selectFrankenFriends .jar-container .edit-photo .edit-photo_canvas {
+            background-image: url("../images/frank_edit_headremplate@2x.png");
+            -webkit-background-size: 196px 297px;
+            -moz-background-size: 196px 297px;
+            -o-background-size: 196px 297px;
+            background-size: 196px 297px; } }
+        #selectFrankenFriends .jar-container .edit-photo .edit-photo_canvas .canvas-container {
+          -webkit-transform-origin: left top;
+          -moz-transform-origin: left top;
+          transform: scale(0.5);
+          -webkit-transform: scale(0.5);
+          -ms-transform: scale(0.5);
+          -moz-transform: scale(0.5);
+          -o-transform: scale(0.5);
+          opacity: 0.6;
+          -webkit-opacity: 0.6;
+          -ms-opacity: 0.6;
+          -moz-opacity: 0.6;
+          -o-opacity: 0.6;
+          position: absolute;
+          top: 0px;
+          left: 0px; }
+      #selectFrankenFriends .jar-container .edit-photo .jar-mask {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 233px;
+        height: 367px;
+        background: url(../images/jarMask_left.png) 0 0 no-repeat;
+        background-size: cover; }
+  #selectFrankenFriends #createFrankenFriend {
+    position: absolute;
+    z-index: 10;
+    width: 290px;
+    bottom: 260px;
+    left: 50%;
+    margin-left: -145px;
+    display: none;
+    opacity: 0;
+    -webkit-opacity: 0;
+    -ms-opacity: 0;
+    -moz-opacity: 0;
+    -o-opacity: 0;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s; }
+    #selectFrankenFriends #createFrankenFriend.ready {
+      display: block;
+      opacity: 1;
+      -webkit-opacity: 1;
+      -ms-opacity: 1;
+      -moz-opacity: 1;
+      -o-opacity: 1; }
+    @media only screen and (max-height: 950px) {
+      #selectFrankenFriends #createFrankenFriend {
+        top: 600px;
+        bottom: auto; } }
+    #selectFrankenFriends #createFrankenFriend .frank_btn {
+      text-align: center; }
+
+#facebookModal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+  font-size: 20px; }
+  #facebookModal .modal-bg {
+    background: #000;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8; }
+  #facebookModal .modal-close {
+    position: absolute;
+    top: -32px;
+    right: 0px;
+    color: #e9e9e9;
+    font-size: 24px; }
+    #facebookModal .modal-close .close-x {
+      border: 1px solid #e9e9e9;
+      padding: 5px 2px 5px 2px;
+      display: inline-block;
+      line-height: 9px; }
+  #facebookModal .modal-content {
+    position: relative;
+    width: 75%;
+    max-width: 600px;
+    height: 80%;
+    max-height: 600px;
+    margin: 10% auto;
+    background: #e8e9ed;
+    box-shadow: 0px 0px 100px #000;
+    -webkit-box-shadow: 0px 0px 100px #000;
+    -ms-box-shadow: 0px 0px 100px #000;
+    -moz-box-shadow: 0px 0px 100px #000;
+    -o-box-shadow: 0px 0px 100px #000; }
+    #facebookModal .modal-content .fb-tabs {
+      float: left;
+      background: #506aa0;
+      width: 300px;
+      padding: 10px 0px;
+      color: #fff;
+      font-weight: normal; }
+      #facebookModal .modal-content .fb-tabs.active {
+        background: #e8e9ed;
+        color: #000;
+        cursor: default; }
+    #facebookModal .modal-content .fb-lists {
+      margin-top: 15px;
+      padding: 0 35px;
+      overflow: auto;
+      max-height: 450px;
+      height: 75%; }
+  #facebookModal #friendList {
+    width: 100%;
+    text-align: center;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+    box-sizing: border-box; }
+    #facebookModal #friendList .friend-link {
+      font-size: 10px;
+      margin: 0 10px 10px;
+      display: inline-block;
+      width: 105px;
+      overflow: hidden;
+      opacity: 0.6;
+      -webkit-opacity: 0.6;
+      -ms-opacity: 0.6;
+      -moz-opacity: 0.6;
+      -o-opacity: 0.6; }
+      #facebookModal #friendList .friend-link.active {
+        opacity: 1;
+        -webkit-opacity: 1;
+        -ms-opacity: 1;
+        -moz-opacity: 1;
+        -o-opacity: 1; }
+        #facebookModal #friendList .friend-link.active .friend-img {
+          border: 1px solid #000; }
+      #facebookModal #friendList .friend-link .fb-fade {
+        background: url("../images/frank_fb_gradient.png") 0 0 no-repeat;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        position: absolute; }
+      #facebookModal #friendList .friend-link .friend-img {
+        border: 1px solid #fff;
+        height: 103px;
+        overflow: hidden;
+        position: relative; }
+        #facebookModal #friendList .friend-link .friend-img img {
+          min-height: 105px;
+          width: 100%;
+          min-width: 105px;
+          box-sizing: border-box;
+          text-align: center; }
+        #facebookModal #friendList .friend-link .friend-img .friend-name {
+          position: absolute;
+          bottom: 0px;
+          color: #fff;
+          text-shadow: 0px 0px 5px #000;
+          padding: 5px;
+          text-align: left;
+          width: 100%;
+          font-size: 15px; }
+    #facebookModal #friendList .stretch {
+      width: 100%;
+      display: inline-block;
+      font-size: 0;
+      line-height: 0; }
+  #facebookModal #friendPaging .next {
+    float: right; }
+  #facebookModal #friendPaging .back {
+    float: left; }
+  #facebookModal #albumList {
+    width: 100%;
+    text-align: center;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+    box-sizing: border-box;
+    display: none; }
+    #facebookModal #albumList .album-link {
+      font-size: 10px;
+      margin: 0 10px 10px;
+      display: inline-block;
+      width: 105px;
+      overflow: hidden; }
+      #facebookModal #albumList .album-link .album-img {
+        height: 103px;
+        overflow: hidden;
+        position: relative; }
+        #facebookModal #albumList .album-link .album-img img {
+          min-height: 105px;
+          width: 100%;
+          min-width: 105px;
+          box-sizing: border-box;
+          text-align: center; }
+    #facebookModal #albumList .stretch {
+      width: 100%;
+      display: inline-block;
+      font-size: 0;
+      line-height: 0; }
+  #facebookModal #albumPhotoList {
+    width: 100%;
+    text-align: center;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+    box-sizing: border-box;
+    display: none; }
+    #facebookModal #albumPhotoList .album-photo-link {
+      font-size: 10px;
+      margin: 0 10px 10px;
+      display: inline-block;
+      width: 105px;
+      overflow: hidden;
+      opacity: 0.8;
+      -webkit-opacity: 0.8;
+      -ms-opacity: 0.8;
+      -moz-opacity: 0.8;
+      -o-opacity: 0.8; }
+      #facebookModal #albumPhotoList .album-photo-link.active {
+        opacity: 1;
+        -webkit-opacity: 1;
+        -ms-opacity: 1;
+        -moz-opacity: 1;
+        -o-opacity: 1; }
+        #facebookModal #albumPhotoList .album-photo-link.active .album-img {
+          border: 1px solid #000; }
+      #facebookModal #albumPhotoList .album-photo-link .album-img {
+        border: 1px solid #fff;
+        height: 103px;
+        overflow: hidden;
+        position: relative; }
+        #facebookModal #albumPhotoList .album-photo-link .album-img img {
+          min-height: 105px;
+          width: 100%;
+          min-width: 105px;
+          box-sizing: border-box;
+          text-align: center; }
+    #facebookModal #albumPhotoList .stretch {
+      width: 100%;
+      display: inline-block;
+      font-size: 0;
+      line-height: 0; }
+  #facebookModal #loading {
+    position: absolute;
+    top: 45px;
+    left: 0px;
+    width: 100%;
+    height: 100%; }
+    #facebookModal #loading .loading {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      margin-left: -25px;
+      -webkit-animation: spin 1s linear infinite;
+      -moz-animation: spin 1s linear infinite;
+      animation: spin 1s linear infinite;
+      width: 50px;
+      height: 50px; }
+      #facebookModal #loading .loading img {
+        width: 100%; }
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg); } }
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+#submitSelection {
+  margin-top: 15px; }
+
+#facebookErrorModal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  z-index: 20; }
+  #facebookErrorModal .modal-bg {
+    background: url("../images/notSupported_bg_desktop.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8; }
+  #facebookErrorModal .modal-close {
+    position: absolute;
+    top: -35px;
+    right: 0px;
+    color: #e9e9e9; }
+    #facebookErrorModal .modal-close .close-x {
+      border: 1px solid #e9e9e9;
+      padding: 3px 3px 7px 3px;
+      display: inline-block;
+      line-height: 12px; }
+  #facebookErrorModal .modal-content {
+    position: relative;
+    width: 75%;
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+    padding: 25px;
+    text-align: center;
+    font-size: 28px;
+    line-height: 24px;
+    color: #fff;
+    text-transform: uppercase; }
+
+.wrapper #transitionVid {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  max-width: 100%;
+  min-height: 700px;
+  display: none;
+  margin: 0 auto;
+  overflow: hidden;
+  top: 0px;
+  clear: both; }
+  .wrapper #transitionVid #transitionVid-01 {
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    top: 50%;
+    height: auto;
+    -webkit-transform: translate(-49.5%, -50%) scale(1.02);
+    transform: translate(-49.5%, -50%) scale(1.02); }
+
+.portrait .wrapper #transitionVid #transitionVid-01 {
+  height: 100%;
+  width: auto; }
+
+@media only screen and (max-height: 980px) {
+  .portrait .wrapper #shareFrankenFriend {
+    background-size: auto 100%; } }
+
+@media only screen and (max-height: 980px) {
+  .landscape .wrapper #shareFrankenFriend {
+    background-size: 1222px auto; } }
+
+#shareFrankenFriend {
+  background: url("../images/frank_bg_library.jpg") center top no-repeat;
+  background-size: auto 100%; }
+  #shareFrankenFriend .franken-blackout {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    -webkit-transform: translateX(-49.5%) scale(1.02);
+    transform: translateX(-49.5%) scale(1.02);
+    max-width: 1300px;
+    z-index: 7;
+    height: 100% !important; }
+  #shareFrankenFriend .franken-user-title {
+    position: absolute;
+    top: 2%;
+    width: 500px;
+    height: 100px;
+    left: 50%;
+    margin-left: -250px; }
+  #shareFrankenFriend .canvas-container {
+    position: absolute !important;
+    left: 50%;
+    bottom: 10px;
+    margin-left: -500px;
+    z-index: 3;
+    display: none; }
+  #shareFrankenFriend .victor-igor {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    max-width: 1850px;
+    min-width: 1560px;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); }
+    #shareFrankenFriend .victor-igor img {
+      position: absolute;
+      left: -316px;
+      top: 0px; }
+      @media only screen and (max-height: 885px) {
+        #shareFrankenFriend .victor-igor img {
+          height: auto;
+          max-width: 1422px; } }
+      @media only screen and (min-height: 930px) {
+        #shareFrankenFriend .victor-igor img {
+          left: -400px;
+          height: auto;
+          width: 100%;
+          bottom: 0px;
+          top: auto; } }
+      @media only screen and (max-width: 1840px) {
+        #shareFrankenFriend .victor-igor img {
+          left: -300px; } }
+    @media only screen and (orientation: portrait) {
+      #shareFrankenFriend .victor-igor {
+        display: none; } }
+    @media only screen and (max-height: 980px) {
+      #shareFrankenFriend .victor-igor {
+        max-width: 1593px;
+        min-width: 1300px; } }
+  #shareFrankenFriend #finalFrank {
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+    width: 100%;
+    text-align: center; }
+    #shareFrankenFriend #finalFrank .img {
+      position: absolute;
+      -webkit-transform: translateX(-50%) scale(1);
+      transform: translateX(-50%) scale(1);
+      bottom: 0px;
+      left: 50%;
+      height: 100%;
+      width: 100%; }
+      #shareFrankenFriend #finalFrank .img .monster-img {
+        max-width: 1430px;
+        max-height: 1072px;
+        width: 100%;
+        position: absolute;
+        -webkit-transform: translateX(-50%) scale(1);
+        transform: translateX(-50%) scale(1);
+        left: 50%;
+        bottom: 0px;
+        height: auto; }
+        #shareFrankenFriend #finalFrank .img .monster-img.small {
+          max-width: 1300px !important;
+          width: 100% !important;
+          height: auto !important;
+          min-width: 1300px !important;
+          bottom: 0px; }
+  #shareFrankenFriend .franken-share-btns {
+    position: absolute;
+    left: 75%;
+    top: 40%;
+    width: 270px;
+    z-index: 3; }
+    @media only screen and (max-width: 1200px) {
+      #shareFrankenFriend .franken-share-btns {
+        right: 6%; } }
+    @media only screen and (min-width: 1400px) {
+      #shareFrankenFriend .franken-share-btns {
+        left: 65%; } }
+    @media only screen and (max-height: 768px) {
+      #shareFrankenFriend .franken-share-btns {
+        top: 25%; } }
+    #shareFrankenFriend .franken-share-btns .frank_btn {
+      margin: 2px 0px; }
+  #shareFrankenFriend #frankenAlive {
+    color: #FFF;
+    font-size: 112px;
+    line-height: 0px;
+    width: 100%;
+    text-align: center; }
+  #shareFrankenFriend #frankenTitle {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    margin-left: -175px;
+    width: 350px;
+    border: 1px solid #3f3f41;
+    background-color: #000;
+    border-radius: 5px;
+    font-size: 34px;
+    padding: 3px 10px;
+    color: #fff;
+    text-align: center;
+    opacity: 0.8;
+    -webkit-opacity: 0.8;
+    -ms-opacity: 0.8;
+    -moz-opacity: 0.8;
+    -o-opacity: 0.8;
+    z-index: 4;
+    outline: none;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
+    #shareFrankenFriend #frankenTitle.default-value {
+      color: #aaa; }
+  #shareFrankenFriend #frankenNameFinal {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    margin-left: -250px;
+    width: 500px;
+    color: #bac9cc;
+    font-size: 50px; }
+  #shareFrankenFriend #submitNameBtn {
+    position: absolute;
+    top: 7px;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    z-index: 4;
+    color: #ffffff;
+    background: url(../images/frank_ui_button_next.png) 0 0 no-repeat;
+    cursor: pointer;
+    opacity: 0.8;
+    -webkit-opacity: 0.8;
+    -ms-opacity: 0.8;
+    -moz-opacity: 0.8;
+    -o-opacity: 0.8; }
+    #shareFrankenFriend #submitNameBtn:hover {
+      opacity: 1;
+      -webkit-opacity: 1;
+      -ms-opacity: 1;
+      -moz-opacity: 1;
+      -o-opacity: 1; }
+  #shareFrankenFriend .franken-text-error {
+    position: absolute;
+    top: 52px;
+    width: 100%;
+    color: #E03838;
+    text-align: center; }
+  #shareFrankenFriend #frankenShare .share-txt {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-left: -10px;
+    opacity: 1;
+    -webkit-opacity: 1;
+    -ms-opacity: 1;
+    -moz-opacity: 1;
+    -o-opacity: 1; }
+  #shareFrankenFriend #frankenShare .share-btns {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-left: -10px;
+    opacity: 0;
+    -webkit-opacity: 0;
+    -ms-opacity: 0;
+    -moz-opacity: 0;
+    -o-opacity: 0; }
+    #shareFrankenFriend #frankenShare .share-btns .share-fb {
+      background-image: url("../images/frank_share_facebook.png");
+      background-size: 69px;
+      height: 35px;
+      background-position: 0px 0px;
+      background-repeat: no-repeat; }
+      #shareFrankenFriend #frankenShare .share-btns .share-fb:hover {
+        background-position: -34px 0; }
+    #shareFrankenFriend #frankenShare .share-btns .share-tw {
+      background-image: url("../images/frank_share_twitter.png");
+      background-size: 69px;
+      height: 35px;
+      background-position: 0px 0px;
+      background-repeat: no-repeat; }
+      #shareFrankenFriend #frankenShare .share-btns .share-tw:hover {
+        background-position: -34px 0; }
+    #shareFrankenFriend #frankenShare .share-btns > div {
+      display: inline-block;
+      margin: 12px 5px;
+      width: 35px; }
+      #shareFrankenFriend #frankenShare .share-btns > div img {
+        width: 100%; }
+  #shareFrankenFriend #frankenShare .frank_btn:hover .share-txt {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -ms-opacity: 0;
+    -moz-opacity: 0;
+    -o-opacity: 0; }
+  #shareFrankenFriend #frankenShare .frank_btn:hover .share-btns {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -ms-opacity: 1;
+    -moz-opacity: 1;
+    -o-opacity: 1; }
+
+.hidden-canvas {
+  display: none; }
+
+#canvasShare {
+  display: none;
+  width: 1200px;
+  height: 630px;
+  position: absolute;
+  top: 0px;
+  left: 0px; }
+
+.ie10 .wrapper .franken-particles {
+  display: none !important; }
+
+.ie #selectFrankenFriends .jar-container .edit-photo .edit-photo_canvas .canvas-container, .ie10 #selectFrankenFriends .jar-container .edit-photo .edit-photo_canvas .canvas-container {
+  top: -120px;
+  left: -110px; }
+
+.ie10 #shareFrankenFriend #finalFrank {
+  z-index: 3; }
+
+.ie10 #shareFrankenFriend .franken-share-btns {
+  z-index: 3; }
+
+.mobile .wrapper {
+  min-width: 320px;
+  min-height: 480px; }
+  .mobile .wrapper .section {
+    min-height: 100%; }
+    .mobile .wrapper .section .section-content {
+      top: 70px; }
+  .mobile .wrapper .franken-grunge {
+    background: url("../images/mobile/frank_grunge.png") 0 0 no-repeat;
+    background-size: cover; }
+  .mobile .wrapper .page {
+    min-width: 320px;
+    min-height: 100%;
+    top: 0px; }
+  .mobile .wrapper #frankenHeader #audio {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    margin: 0 0;
+    z-index: 10;
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -o-transform: scale(0.7); }
+  .mobile .wrapper #frankenHeader .frankenHeader_title {
+    width: 90%;
+    max-width: 315px;
+    height: auto;
+    margin: 5px auto 0;
+    font-size: 28px;
+    text-align: center;
+    float: none; }
+    @media only screen and (min-width: 401px) {
+      .mobile .wrapper #frankenHeader .frankenHeader_title {
+        width: 100%; } }
+    @media only screen and (min-width: 350px) and (max-width: 400px) {
+      .mobile .wrapper #frankenHeader .frankenHeader_title {
+        width: 100%; } }
+  .mobile .wrapper #frankenHeader .frankenHeader_title-mobile {
+    background: url("../images/frank_TT_sm@2x.png") 0 0 no-repeat;
+    background-size: 100%;
+    width: 60%;
+    height: 98px;
+    margin: 10px auto 0; }
+  .mobile .wrapper #frankenHeader .frankenHeader_hashtag {
+    display: none;
+    float: none;
+    text-align: center;
+    margin: -29px 0 0 0; }
+
+.mobile #frankenIntro .franken-preview-container {
+  bottom: 0px; }
+  .mobile #frankenIntro .franken-preview-container .franken-preview.small {
+    width: 200% !important;
+    max-width: 2000px !important;
+    min-width: 320px !important; }
+
+.mobile #frankenIntro .franken-preview-copy {
+  font-size: 28px;
+  line-height: 25px;
+  top: 100px;
+  width: 80%;
+  text-shadow: 0px 0px 4px #000; }
+
+.mobile #frankenLoader .loading-container .loading-content {
+  width: 90%;
+  top: 30px;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -o-transform: translateY(0); }
+  .mobile #frankenLoader .loading-container .loading-content .loading-title {
+    width: 100%;
+    background-size: 100%; }
+
+.mobile #selectFrankenFriends {
+  background: url("../images/mobile/frank_bg_library.jpg") center top no-repeat;
+  background-size: 100%; }
+  .mobile #selectFrankenFriends .section {
+    left: 50%;
+    -webkit-transform: translateX(-49.5%) scale(1.02);
+    transform: translateX(-49.5%) scale(1.02); }
+  .mobile #selectFrankenFriends .section .section-content {
+    top: 80px;
+    width: 100%;
+    margin-left: 0px;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -ms-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s; }
+  .mobile #selectFrankenFriends #createFrankenFriend {
+    top: 0px; }
+  .mobile #selectFrankenFriends .jar-num {
+    color: #0076c0;
+    font-size: 30px;
+    margin-bottom: -3px; }
+    @media only screen and (min-width: 401px) {
+      .mobile #selectFrankenFriends .jar-num {
+        font-size: 34px;
+        margin: 5px 0; } }
+    @media only screen and (min-width: 350px) and (max-width: 400px) {
+      .mobile #selectFrankenFriends .jar-num {
+        margin: 5px 0; } }
+  .mobile #selectFrankenFriends .jar-container-arrows {
+    position: absolute;
+    top: 50%;
+    width: 25px;
+    height: 36px;
+    z-index: 20; }
+    .mobile #selectFrankenFriends .jar-container-arrows img {
+      width: 100%; }
+    .mobile #selectFrankenFriends .jar-container-arrows.arrow-right {
+      right: 10px; }
+    .mobile #selectFrankenFriends .jar-container-arrows.arrow-left {
+      left: 10px; }
+  .mobile #selectFrankenFriends .franken-hardware {
+    top: 50px !important;
+    height: 100%;
+    width: 100%; }
+    .mobile #selectFrankenFriends .franken-hardware .franken-shelf {
+      bottom: auto;
+      top: 45%; }
+      @media only screen and (min-width: 401px) {
+        .mobile #selectFrankenFriends .franken-hardware .franken-shelf {
+          top: 50%; } }
+    .mobile #selectFrankenFriends .franken-hardware .franken-jars {
+      background: none;
+      width: 100%;
+      margin-left: auto;
+      left: 0px;
+      height: 100%;
+      top: 0px; }
+    .mobile #selectFrankenFriends .franken-hardware .jar-shadow_middle {
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      top: 0px;
+      background-position: top center; }
+  .mobile #selectFrankenFriends .jar-containers {
+    height: 100%;
+    left: 0px; }
+    .mobile #selectFrankenFriends .jar-containers.section-content {
+      top: 0px; }
+    .mobile #selectFrankenFriends .jar-containers .jar-00 {
+      background-image: url("../images/frank_jar_01.png"); }
+    .mobile #selectFrankenFriends .jar-containers .jar-01 {
+      background-image: url("../images/frank_jar_02.png"); }
+    .mobile #selectFrankenFriends .jar-containers .jar-02 {
+      background-image: url("../images/frank_jar_03.png"); }
+  .mobile #selectFrankenFriends .jar-container {
+    width: 100%;
+    height: 100%;
+    background-size: 340px;
+    background-position: center -44px;
+    background-repeat: no-repeat;
+    min-height: 568px;
+    left: 100%;
+    position: absolute;
+    display: block;
+    margin: 0 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s; }
+    @media only screen and (min-width: 401px) {
+      .mobile #selectFrankenFriends .jar-container {
+        background-size: 410px;
+        background-position: center -30px; } }
+    @media only screen and (min-width: 350px) and (max-width: 400px) {
+      .mobile #selectFrankenFriends .jar-container {
+        background-size: 380px;
+        background-position: center -44px; } }
+    .mobile #selectFrankenFriends .jar-container .add-photo {
+      opacity: 0 !important;
+      -webkit-opacity: 0 !important;
+      -ms-opacity: 0 !important;
+      -moz-opacity: 0 !important;
+      -o-opacity: 0 !important;
+      overflow: visible;
+      height: 100%;
+      margin-top: 0px; }
+      .mobile #selectFrankenFriends .jar-container .add-photo .add-photo-btn {
+        position: absolute;
+        top: 45%;
+        width: 100%; }
+        @media only screen and (max-width: 350px) and (min-width: 321px) {
+          .mobile #selectFrankenFriends .jar-container .add-photo .add-photo-btn {
+            top: 40%; } }
+      .mobile #selectFrankenFriends .jar-container .add-photo:hover .add-photo_options {
+        height: 0px;
+        margin: -40px auto 0px;
+        padding: 10px 0px 10px 0px;
+        overflow: hidden; }
+      .mobile #selectFrankenFriends .jar-container .add-photo.hover .add-photo_options {
+        margin: -8px auto;
+        padding: 10px 0px 5px 0px;
+        height: 65px;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -o-transition: all 0.5s; }
+    .mobile #selectFrankenFriends .jar-container.active .add-photo {
+      opacity: 1 !important;
+      -webkit-opacity: 1 !important;
+      -ms-opacity: 1 !important;
+      -moz-opacity: 1 !important;
+      -o-opacity: 1 !important; }
+    .mobile #selectFrankenFriends .jar-container .next-button {
+      top: 490px;
+      display: none; }
+    .mobile #selectFrankenFriends .jar-container.active.has-image {
+      opacity: 1;
+      -webkit-opacity: 1;
+      -ms-opacity: 1;
+      -moz-opacity: 1;
+      -o-opacity: 1;
+      background-size: 285px;
+      background-position: center -5px; }
+      @media only screen and (min-width: 401px) {
+        .mobile #selectFrankenFriends .jar-container.active.has-image {
+          background-size: 410px;
+          background-position: center -30px; } }
+      @media only screen and (min-width: 350px) and (max-width: 400px) {
+        .mobile #selectFrankenFriends .jar-container.active.has-image {
+          background-size: 370px;
+          background-position: center -40px; } }
+      .mobile #selectFrankenFriends .jar-container.active.has-image .next-button {
+        top: 395px;
+        display: block; }
+        @media only screen and (min-width: 401px) {
+          .mobile #selectFrankenFriends .jar-container.active.has-image .next-button {
+            top: 555px; } }
+        @media only screen and (min-width: 350px) and (max-width: 400px) {
+          .mobile #selectFrankenFriends .jar-container.active.has-image .next-button {
+            top: 490px; } }
+    .mobile #selectFrankenFriends .jar-container.has-image {
+      opacity: 0;
+      -webkit-opacity: 0;
+      -ms-opacity: 0;
+      -moz-opacity: 0;
+      -o-opacity: 0; }
+      .mobile #selectFrankenFriends .jar-container.has-image .edit-photo .edit-photo_canvas {
+        margin: 30px auto 0;
+        transform: scale(0.75);
+        -webkit-transform: scale(0.75);
+        -ms-transform: scale(0.75);
+        -moz-transform: scale(0.75);
+        -o-transform: scale(0.75); }
+        @media only screen and (min-width: 401px) {
+          .mobile #selectFrankenFriends .jar-container.has-image .edit-photo .edit-photo_canvas {
+            margin: 100px auto 0;
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -o-transform: scale(1.1); } }
+        @media only screen and (min-width: 350px) and (max-width: 400px) {
+          .mobile #selectFrankenFriends .jar-container.has-image .edit-photo .edit-photo_canvas {
+            margin: 80px auto 0;
+            transform: scale(1);
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            -moz-transform: scale(1);
+            -o-transform: scale(1); } }
+    .mobile #selectFrankenFriends .jar-container .edit-photo .edit-photo_canvas {
+      margin: 70px auto 0; }
+    .mobile #selectFrankenFriends .jar-container .edit-photo .edit-photo_controls {
+      margin: -20px auto 0; }
+      @media only screen and (min-width: 401px) {
+        .mobile #selectFrankenFriends .jar-container .edit-photo .edit-photo_controls {
+          margin: 0 auto; } }
+      .mobile #selectFrankenFriends .jar-container .edit-photo .edit-photo_controls .edit-ui {
+        margin: 5px auto -5px; }
+      .mobile #selectFrankenFriends .jar-container .edit-photo .edit-photo_controls .image-control {
+        margin: 0 auto; }
+  .mobile #selectFrankenFriends .jar-description {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    height: 50px;
+    text-shadow: 0px 0px 4px #000;
+    top: 30px;
+    z-index: 2 !important;
+    display: block;
+    width: 320px;
+    left: 50%;
+    margin-left: -160px; }
+    @media only screen and (min-width: 401px) {
+      .mobile #selectFrankenFriends .jar-description {
+        top: 40px; } }
+    .mobile #selectFrankenFriends .jar-description .add, .mobile #selectFrankenFriends .jar-description .photo {
+      font-weight: normal;
+      display: block;
+      line-height: 15px;
+      margin: 0px; }
+  .mobile #selectFrankenFriends.has-images .jar-description {
+    display: none; }
+
+.mobile #shareFrankenFriend {
+  background: url("../images/mobile/frank_bg_study.jpg") center top no-repeat;
+  background-size: 100%; }
+  .mobile #shareFrankenFriend .franken-user-title {
+    top: auto;
+    height: 50px;
+    z-index: 5;
+    bottom: 90px; }
+  .mobile #shareFrankenFriend #finalFrank {
+    height: 100% !important; }
+    .mobile #shareFrankenFriend #finalFrank .img {
+      bottom: 8px;
+      height: 100%;
+      width: 100%; }
+    .mobile #shareFrankenFriend #finalFrank .franken-text-error {
+      top: -22px; }
+  .mobile #shareFrankenFriend #frankenTitle {
+    width: 250px;
+    -webkit-transform: translateX(-50%) !important;
+    transform: translateX(-50%) !important;
+    margin-left: 0px; }
+    @media only screen and (min-width: 401px) {
+      .mobile #shareFrankenFriend #frankenTitle {
+        width: 300px; } }
+    @media only screen and (min-width: 350px) and (max-width: 400px) {
+      .mobile #shareFrankenFriend #frankenTitle {
+        width: 300px; } }
+  .mobile #shareFrankenFriend .franken-mobile-share-btns {
+    position: absolute;
+    bottom: 30px;
+    z-index: 5;
+    width: 100%; }
+    @media only screen and (min-width: 401px) {
+      .mobile #shareFrankenFriend .franken-mobile-share-btns {
+        bottom: 20px; } }
+    @media only screen and (min-width: 350px) and (max-width: 400px) {
+      .mobile #shareFrankenFriend .franken-mobile-share-btns {
+        bottom: 20px; } }
+    .mobile #shareFrankenFriend .franken-mobile-share-btns .share-btn {
+      display: inline-block;
+      width: 15%;
+      margin: 0 10px;
+      vertical-align: top; }
+      .mobile #shareFrankenFriend .franken-mobile-share-btns .share-btn img {
+        width: 100%; }
+      .mobile #shareFrankenFriend .franken-mobile-share-btns .share-btn a {
+        text-decoration: none; }
+    .mobile #shareFrankenFriend .franken-mobile-share-btns .btn-txt {
+      margin-top: -10px;
+      color: #bac9cc;
+      font-size: 15px; }
+      @media only screen and (min-width: 401px) {
+        .mobile #shareFrankenFriend .franken-mobile-share-btns .btn-txt {
+          margin-top: -5px; } }
+      @media only screen and (min-width: 350px) and (max-width: 400px) {
+        .mobile #shareFrankenFriend .franken-mobile-share-btns .btn-txt {
+          margin-top: -5px; } }
+  .mobile #shareFrankenFriend #mobileShareOverlay {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    z-index: 5;
+    display: none; }
+    .mobile #shareFrankenFriend #mobileShareOverlay .modal-bg {
+      background: url("../images/mobile/frank_rotate_bg.png") 0 0 no-repeat;
+      background-size: 100% 100%;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      opacity: 0.8;
+      -webkit-opacity: 0.8;
+      -ms-opacity: 0.8;
+      -moz-opacity: 0.8;
+      -o-opacity: 0.8; }
+    .mobile #shareFrankenFriend #mobileShareOverlay .modal-close {
+      position: absolute;
+      top: 25%;
+      right: 20px;
+      color: #fff; }
+      .mobile #shareFrankenFriend #mobileShareOverlay .modal-close .close-x {
+        border: 1px solid #fff;
+        padding: 3px;
+        display: inline-block;
+        line-height: 9px; }
+    .mobile #shareFrankenFriend #mobileShareOverlay .modal-content {
+      width: 100%;
+      height: 100px;
+      position: relative; }
+      .mobile #shareFrankenFriend #mobileShareOverlay .modal-content .share-fb, .mobile #shareFrankenFriend #mobileShareOverlay .modal-content .share-tw {
+        display: inline-block;
+        margin: 0 15px;
+        width: 30%; }
+        .mobile #shareFrankenFriend #mobileShareOverlay .modal-content .share-fb img, .mobile #shareFrankenFriend #mobileShareOverlay .modal-content .share-tw img {
+          width: 100%; }
+  .mobile #shareFrankenFriend #submitNameBtn {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    z-index: 4;
+    color: #ffffff;
+    background: url(../images/frank_ui_button_next.png) 0 0 no-repeat;
+    cursor: pointer; }
+  .mobile #shareFrankenFriend #frankenNameFinal {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    margin-left: -175px;
+    width: 350px;
+    color: #bac9cc;
+    font-size: 60px; }
+    @media only screen and (min-width: 401px) {
+      .mobile #shareFrankenFriend #frankenNameFinal {
+        top: -45px; } }
+
+.mobile #frankenFooter {
+  width: 100%;
+  height: 20px;
+  position: relative;
+  max-width: 1222px;
+  margin: 50px auto 20px;
+  z-index: 20;
+  text-align: center;
+  float: left; }
+  .mobile #frankenFooter .frankenFooter_title {
+    display: none; }
+  .mobile #frankenFooter .frankenFooter_hashtag {
+    float: none;
+    text-align: center;
+    margin-right: 0px;
+    color: #fff;
+    text-shadow: 0px 0px 4px #000; }
+
+.mobile #frankenFooterRight {
+  display: none; }
+
+.mobile #facebookModal {
+  width: 100%; }
+  .mobile #facebookModal .modal-content {
+    width: 100%;
+    height: 80%; }
+    .mobile #facebookModal .modal-content .fb-tabs {
+      width: 50%;
+      font-size: 19px; }
+    .mobile #facebookModal .modal-content .fb-lists {
+      padding: 0px 0px;
+      overflow: auto;
+      height: 70%; }
+    .mobile #facebookModal .modal-content #albumList .album-link {
+      margin: 0 5px 10px; }
+    .mobile #facebookModal .modal-content #albumPhotoList .album-photo-link {
+      margin: 0 5px 10px; }
+    .mobile #facebookModal .modal-content #friendList {
+      width: 100%;
+      margin-top: 15px;
+      padding: 0px; }
+      .mobile #facebookModal .modal-content #friendList .friend-link {
+        font-size: 10px;
+        margin: 0 7px 10px;
+        display: inline-block;
+        width: 105px;
+        overflow: hidden; }
+
+.mobile #legalFooter {
+  min-width: 100px;
+  text-align: center; }
+  .mobile #legalFooter .legal {
+    padding: 5px 5%; }
+    .mobile #legalFooter .legal .social-links {
+      margin-bottom: 0px; }
+    .mobile #legalFooter .legal .footer-fb:hover {
+      background-position: 0 0; }
+    .mobile #legalFooter .legal .footer-tw:hover {
+      background-position: 0 0; }
+  .mobile #legalFooter .frankenFooter_hashtag {
+    font-size: 18px;
+    color: #0076c0;
+    margin-bottom: 10px; }
+  .mobile #legalFooter .legal_graphics {
+    display: inline-block;
+    float: none;
+    width: 130px; }
+  .mobile #legalFooter .mid {
+    clear: both;
+    width: 100%;
+    float: none;
+    margin-bottom: 10px; }
+  .mobile #legalFooter .ratingWrap {
+    width: 130px;
+    clear: both;
+    float: none;
+    margin: 5px auto;
+    display: inline-block; }
+    .mobile #legalFooter .ratingWrap .rating {
+      float: none; }
+    .mobile #legalFooter .ratingWrap .rating_info {
+      float: none;
+      margin-right: 5px; }
+
+.mobile #unSupported .modal-content, .mobile #fileSizeError .modal-content, .mobile #fileTypeError .modal-content {
+  font-size: 14px; }
+
+.mobile #unSupported .modal-bg {
+  background: url("../images/mobile/frank_rotate_bg.png") 0 0 no-repeat;
+  background-size: cover; }
+
+@media screen and (orientation: landscape) {
+  .mobile #unSupported .tt {
+    margin: 0 auto 25px; } }
+
+.mobile #facebookModal .fb-lists::-webkit-scrollbar {
+  display: none; }
+
+.mobile.webApp #mobileWebApp {
+  display: block;
+  z-index: 20; }
+
+.mobile.webApp.android .ios-txt {
+  display: none; }
+
+.mobile.webApp.ios .android-txt {
+  display: none; }
+
+.mobile.landscape {
+  overflow: hidden; }
+  .mobile.landscape #landscapeMobile {
+    position: fixed;
+    display: block;
+    z-index: 20; }
+
+.tablet .wrapper .franken-grunge {
+  height: 101%; }
+
+.tablet .wrapper #frankenFooter {
+  margin: -130px auto 0; }
+  .tablet .wrapper #frankenFooter .frankenFooter_title {
+    width: 285px;
+    background-size: 100%; }
+
+.tablet .wrapper #frankenFooterRight {
+  margin: -130px auto 0; }
+
+.tablet.portrait #frankenIntro .franken-preview-container {
+  bottom: -150px; }
+  .tablet.portrait #frankenIntro .franken-preview-container .franken-preview.small {
+    width: 175% !important;
+    max-width: 2000px !important;
+    min-width: 320px !important; }
+
+.tablet.portrait #frankenIntro .franken-preview-copy {
+  text-shadow: 0px 0px 4px #000; }
+
+.tablet.portrait #selectFrankenFriends .section {
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  left: 8px; }
+  .tablet.portrait #selectFrankenFriends .section .section-content {
+    bottom: 90px; }
+
+.tablet.portrait #selectFrankenFriends .jar-containers .jar-description {
+  top: -325px; }
+
+.tablet.portrait #selectFrankenFriends .jar-container {
+  bottom: 200px; }
+  .tablet.portrait #selectFrankenFriends .jar-container .add-photo {
+    margin-top: 210px; }
+
+.tablet.portrait #shareFrankenFriend .franken-blackout {
+  width: 175% !important;
+  max-width: 2000px;
+  bottom: -97px; }
+
+.tablet.portrait #shareFrankenFriend #finalFrank .img .monster-img.small {
+  max-width: 2000px !important;
+  width: 160% !important;
+  height: auto !important;
+  bottom: -90px;
+  max-height: 2000px; }
+
+.tablet.landscape #shareFrankenFriend .victor-igor {
+  bottom: 40px;
+  min-width: 1150px; }
+
+.tablet #facebookModal .modal-content {
+  height: 500px; }
+  .tablet #facebookModal .modal-content .fb-lists {
+    height: 350px; }

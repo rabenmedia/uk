@@ -1,0 +1,208 @@
+{
+	"metaData": {
+		"title": "Franken-Friend.com | Victor Frankenstein - In Theaters November 25",
+		"description": "IT'S ALIVE! Create a custom Franken-Friend monster using photos of your friends, then share your abomination with the world. Victor Frankenstein - in Theaters November 25.",
+		"siteName": "Victor Frankenstein | 20th Century Fox",
+		"twitterHandle": "@frankenstein",
+		"appUrl": "http://www.franken-friend.com/",
+		"s3bucketUrl": "http://s3.foxfilm.com/frankenfriend/",
+		"hashtag": {
+			"size": "22px",
+			"mobileSize": "18px",
+			"value": "#VictorFrankenstein"
+		},
+		"fbAppID": 185438891791111,
+		"cookieBanner": {
+			"visible": "true",
+			"value": "http://www.foxprivacy.com/uk/cookie_banner.js"
+		}
+	},
+	"intro": {
+		"previewCopy01": {
+			"size": "40px",
+			"mobileSize": "28px",
+			"value": "COMBINE YOUR FRIENDS' FACES WITH YOURS"
+		},
+		"previewCopy02": {
+			"size": "40px",
+			"mobileSize": "28px",
+			"value": "TO CREATE YOUR OWN UNHOLY ABOMINATION"
+		}
+	},
+	"shareFrank": {
+		"itsAlive": {
+			"size": "112px",
+			"value": "IT'S ALIVE!"
+		},
+		"badName": {
+			"size": "16px",
+			"value": "BAD NAME, TRY AGAIN"
+		},
+		"placeHolder": {
+			"size": "34px",
+			"value": "NAME YOUR MONSTER"
+		},
+		"unsupportedTitle": {
+			"size": "24px",
+			"value": "YOUR BROWSER IS OUT OF DATE."
+		},
+		"unsupportedTxt": {
+			"size": "19px",
+			"value": "LOOKS LIKE YOU ARE USING AN UNSUPPORTED BROWSER. TO GET THE MOST OUT OF THIS EXPERIENCE, PLEASE UPGRADE TO THE LATEST VERSION OF CHROME, FIREFOX, SAFARI OR INTERNET EXPLORER."
+		}
+	},
+	"desktopSelect": {
+		"instTxt01": {
+			"size": "28px",
+			"value": "ADD A PHOTO OF YOURSELF OR FRIEND TO EACH JAR"
+		},
+		"instTxt02": {
+			"size": "28px",
+			"value": "USE THE TOOLS TO ALIGN THE EYES AND MOUTHS FOR EACH FACE"
+		},
+		"addPhotoBtn": {
+			"size": "24px",
+			"value": "ADD PHOTO"
+		},
+		"facebookBtn": {
+			"size": "20px",
+			"value": "FACEBOOK"
+		},
+		"uploadBtn": {
+			"size": "20px",
+			"value": "UPLOAD"
+		},
+		"createBtn": {
+			"size": "24px",
+			"value": "CREATE"
+		}
+	},
+	"mobileSelect": {
+		"jarNum01": {
+			"size": "30px",
+			"value": "JAR 1 OF 3"
+		},
+		"jarNum02": {
+			"size": "30px",
+			"value": "JAR 2 OF 3"
+		},
+		"jarNum03": {
+			"size": "30px",
+			"value": "JAR 3 OF 3"
+		},
+		"instTxt01": {
+			"size": "16px",
+			"value": "ADD A PHOTO OF YOURSELF OR FRIEND TO EACH JAR,"
+		},
+		"instTxt02": {
+			"size": "16px",
+			"value": "THEN LINE UP THE EYES AND MOUTH WITHIN THE TEMPLATE"
+		},
+		"nextBtn": {
+			"size": "24px",
+			"value": "NEXT"
+		}
+	},
+	"shareBtn": {
+		"shuffleBtn": {
+			"size": "24px",
+			"mobileSize": "15px",
+			"value": "SHUFFLE"
+		},
+		"downloadBtn": {
+			"size": "24px",
+			"mobileSize": "15px",
+			"value": "DOWNLOAD"
+		},
+		"shareBtn": {
+			"size": "24px",
+			"mobileSize": "15px",
+			"value": "SHARE"
+		},
+		"restartBtn": {
+			"size": "24px",
+			"mobileSize": "15px",
+			"value": "RESTART"
+		}
+	},
+	"facebookModal": {
+		"closeBtn": {
+			"size": "24px",
+			"value": "CLOSE"
+		},
+		"friendsTab": {
+			"size": "20px",
+			"value": "FACEBOOK FRIENDS"
+		},
+		"albumsTab": {
+			"size": "20px",
+			"value": "FACEBOOK ALBUMS"
+		},
+		"backBtn": {
+			"size": "20px",
+			"value": "BACK TO ALBUMS"
+		},
+		"submitBtn": {
+			"size": "24px",
+			"value": "SUBMIT"
+		}
+	},
+	"errorMessage": {
+		"fbLogin": {
+			"size": "24px",
+			"value": "You must be logged in to Facebook to use this feature."
+		},
+		"unsupported": {
+			"size": "28px",
+			"mobileSize": "14px",
+			"value": "This site works best with a newer browser.<br/><a href=\"http://outdatedbrowser.com/\" target=\"_blank\">Upgrade yours to get the full experience.</a>"
+		},
+		"rotate": {
+			"size": "28px",
+			"value": "PLEASE ROTATE YOUR DEVICE"
+		},
+		"fileSize": {
+			"size": "28px",
+			"mobileSize": "14px",
+			"value": "File size too large.<br />Please try again.<br />Max upload file size is 7MB."
+		},
+		"fileType": {
+			"size": "28px",
+			"mobileSize": "14px",
+			"value": "Invalid file type.<br />Please try again.<br />Allowed file types are: jpg or png"
+		}
+	},
+	"mobileWeb": {
+		"webAppUnsupported": {
+			"size": "34px",
+			"value": "THIS BROWSER<br />IS NOT SUPPORTED"
+		},
+		"iosTxt": {
+			"mobileSize": "14px",
+			"value": "PLEASE VISIT THIS SITE<br />WITH THE SAFARI APP."
+		},
+		"androidTxt": {
+			"mobileSize": "14px",
+			"value": "PLEASE VISIT THIS SITE<br />WITH THE CHROME APP."
+		}
+	},
+	"footer": {
+		"mainsiteURL": "http://www.foxmovies.com/movies/victor-frankenstein",
+		"watchTrailer": {
+			"size": "22px",
+			"value": "WATCH TRAILER"
+		},
+		"watchTrailerURL": "https://www.youtube.com/watch?v=7pxZxY_Siyc",
+		"legalTxt": {
+			"size": "13px",
+			"value": "http://www.foxprivacy.com/us/footer.js"
+		},
+		"ratings": {
+			"size": "10px",
+			"value": "FOR RATINGS REASONS GO TO<br><a href=\"http://www.filmratings.com/\" target=\"_blank\">FILMRATINGS.COM</a>, <a href=\"http://mpaa.org/\" target=\"_blank\">MPAA.ORG</a>"
+		},
+		"facebookURL": "https://www.facebook.com/FrankensteinMovie",
+		"twitterShare": "",
+		"twitterURL": "https://twitter.com/frankenstein"
+	}
+}
