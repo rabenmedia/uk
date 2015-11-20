@@ -1,9 +1,9 @@
 {
 	"metaData": {
-		"title": "Franken-Friend.com | Victor Frankenstein - In Theaters November 25",
-		"description": "IT'S ALIVE! Create a custom Franken-Friend monster using photos of your friends, then share your abomination with the world. Victor Frankenstein - in Theaters November 25.",
+		"title": "Franken-Friend.com | Victor Frankenstein - IN CINEMAS DECEMBER 3",
+		"description": "IT'S ALIVE! Create a custom Franken-Friend monster using photos of your friends, then share your abomination with the world. Victor Frankenstein - IN CINEMAS DECEMBER 3.",
 		"siteName": "Victor Frankenstein | 20th Century Fox",
-		"twitterHandle": "@frankenstein",
+		"twitterHandle": "@20CenturyFoxUK",
 		"appUrl": "http://www.franken-friend.com/",
 		"s3bucketUrl": "http://s3.foxfilm.com/frankenfriend/",
 		"hashtag": {
@@ -192,17 +192,17 @@
 			"size": "22px",
 			"value": "WATCH TRAILER"
 		},
-		"watchTrailerURL": "https://www.youtube.com/watch?v=7pxZxY_Siyc",
+		"watchTrailerURL": "https://www.youtube.com/watch?v=cvESrJ5GdHc",
 		"legalTxt": {
 			"size": "13px",
-			"value": "http://www.foxprivacy.com/us/footer.js"
+			"value": "http://www.foxprivacy.com/uk/footer.js"
 		},
 		"ratings": {
 			"size": "10px",
-			"value": "FOR RATINGS REASONS GO TO<br><a href=\"http://www.filmratings.com/\" target=\"_blank\">FILMRATINGS.COM</a>, <a href=\"http://mpaa.org/\" target=\"_blank\">MPAA.ORG</a>"
+			"value": ""
 		},
-		"facebookURL": "https://www.facebook.com/FrankensteinMovie",
+		"facebookURL": "https://www.facebook.com/VictorFrankensteinUK",
 		"twitterShare": "",
-		"twitterURL": "https://twitter.com/frankenstein"
+		"twitterURL": "https://twitter.com/20CenturyFoxUK"
 	}
 }
